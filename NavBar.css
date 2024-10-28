@@ -1,0 +1,138 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: rgb(55, 138, 91);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: yellow;
+  z-index: 1000;
+}
+
+.logo {
+  height: 45px; /* Adjust the height of the logo */
+  top: 10px;
+  position: relative;
+  margin-right: -1px; /* Space between logo and brand name */
+}
+
+.brand {
+  color: yellow;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  margin-left: -10px; /* Adjust this value to move the brand name to the left */
+}
+
+.navbar a {
+  font-size: 18px;
+  color: yellow;
+  font-weight: 500;
+  margin-left: 50px;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Hover Effect */
+.navbar a:hover {
+  color: #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: rgb(55, 138, 91); /* Same as header for consistency */
+  color: white; /* Change this to your preferred footer text color */
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px; /* Center content */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: white; /* Change to desired link color */
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Add hover effect */
+}
+
+/* Adjust for Mobile View */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      margin-left: 0;
+  }
+
+  .navbar a {
+      margin-left: 0;
+      margin-bottom: 15px;
+  }
+
+  .dropdown {
+      margin-left: 0;
+  }
+
+  .footer {
+      text-align: center; /* Center text on smaller screens */
+  }
+}

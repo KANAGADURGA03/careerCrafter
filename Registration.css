@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+#background {
+    background-image: url('images/reg.jpg'); /* Adjusted the image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+section {
+    background-color: rgba(255, 255, 255, 0.5); /* Light pink background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 440px; /* Increased width for slight expansion */
+    max-width: 90%;
+    margin-left: 4%; /* Added margin to move the card to the right */
+    margin-top: 2%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:disabled {
+    background-color: grey;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+ 
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+ 
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+ 
+.hide {
+    display: none;
+}
+ 
+.valid {
+    color: black;
+    margin-left: 0.25rem;
+    float: right;
+}
+ 
+.invalid {
+    color: black;
+    margin-left: 0.25rem; /* Adjust this value as needed */
+    float: right; /* This will move the element to the right */
+}
+
+ 
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+ 
+.line {
+    display: inline-block;
+}

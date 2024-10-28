@@ -1,0 +1,35 @@
+/* EmployerHome.css */
+.profile-card {
+    background-color:white; /* Make the background bright to ensure visibility */
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    width: 300px;  /* Set a width */
+    height: auto;  /* Ensure height adapts to content */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+    display: block; /* Ensure it's displayed */
+}
+/* EmployerHome.css */
+
+
+.btn {
+    background-color: #3e8e41; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    width: 10%; /* Make buttons full width */
+    margin: 0 0 16px; /* Set margin for vertical spacing */
+}
+
+.btn:hover {
+    background-color: #2c6c32; /* Darker shade on hover */
+}
+
+.button-group {
+    display: flex; /* Use flexbox for spacing */
+    justify-content: space-between; /* Space between buttons */
+    margin: 16px 0; /* Margin for top and bottom */
+}

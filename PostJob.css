@@ -1,0 +1,68 @@
+/* src/components/PostJob.css */
+.post-job-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f7f7f7; /* Light background color */
+    margin-top: 80px;
+}
+
+.post-job-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Increased width for the card */
+    max-width: 90%; /* Ensure it does not exceed 90% of the viewport */
+}
+
+.post-job-card h2 {
+    text-align: center; /* Center the heading */
+}
+
+.post-job-card label {
+    display: block;
+    margin-bottom: 10px; /* Spacing between labels */
+}
+
+.post-job-card input,
+.post-job-card textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px;
+    margin-top: 5px; /* Space above inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+}
+
+.add-button {
+    background-color: green; /* Green background for add button */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Adjust padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; /* Allow button to grow */
+    margin-right: 10px; /* Space between buttons */
+}
+
+.cancel-button {
+    background-color: red; /* Red background for cancel button */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Adjust padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; /* Allow button to grow */
+}
+
+.add-button:hover,
+.cancel-button:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}

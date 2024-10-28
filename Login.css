@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#login-background { /* This ID must match the one used in Login.jsx */
+    background-image: url('images/reg.jpg');
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    padding: 0; /* Remove padding to prevent offset */
+    background-size: cover; /* Optional: Ensure the image covers the entire background */
+    background-position: center;
+}
+
+.login-section {
+    background-color: rgba(255, 255, 255, 0.5); /* Light pink background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 440px; /* Fixed width for the form */
+    max-width: 90%;
+    margin-left: -340px; /* Adjust this value to move it further left */
+}
+button {
+    background-color: #007bff; /* Change this to your desired color */
+    color: white; /* Text color */
+    cursor: pointer;
+    margin-top: 15px;
+    border: none; /* Optional: Remove the border */
+    padding: 10px; /* Optional: Add padding for better size */
+    border-radius: 5px; /* Optional: Maintain rounded corners */
+    transition: background-color 0.3s; /* Optional: Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
